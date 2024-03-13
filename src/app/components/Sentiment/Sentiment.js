@@ -80,11 +80,7 @@ const Sentiment = () => {
         />
       </p>
 
-      <h4>
-        {result
-          ? `The text is ${result.label} (${result.score.toFixed(2)})`
-          : null}
-      </h4>
+      <h4>{result ? `${JSON.stringify(result, null, 2)}` : null}</h4>
     </main>
   );
 };
